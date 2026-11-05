@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>ZuperVerse - Semesta Belajar 3D</title>
+<meta name="description" content="ZuperVerse, semesta belajar 3D anak Indonesia. Game belajar: jelajahi kota, selesaikan misi, dan jawab soal dari guru. Untuk SD, SMP, SMA/SMK.">
+<meta name="theme-color" content="#14183a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIJElEQVR4nK2Xa4xdVRXHf2vvfc657+nMtNPndPoYpbUF5VEKQqU8VcojMbaKgnwRTBA0FInRoBFiQImYSIyJmuCD+GqN2hSEgFhAFMWApRQ6YGf6GGb6mM60d2buvefec/befrgzbS0tr7J2/snJPvvstfZ/rb3WOgKwbt3WcM2apY15i2/ratTSLwv+SqNlrscHgHBy4kESRHYp0Ruzhvu3bbtvF6zWsN7Kpk1bCytXLpk7p+umJTrI/rBUyHZYl1AZrwOg1EmqnxARjfOKNE2HotB9qe+/9/8WVmsB6O5euxoVrms06kyfXqha6/TQ0HhULEQ2rifa+5NUDiSp9R3TSnH71CI9PQeyYWTXbH/1++tl4cK1nR62iKgWvHOpdVoApRXd3R2VHTuGcjZ1grx7TwjgvCcTGRdFQVIerYdKKIM/zeBkrTHRFOdiK6J02CQFD7zWsy9vtELJyftBi1CPrYprNtIaq1RmSpLEa40SdTXOepyoej0lkzH4CatDY/DeN6057tEmWHmbPjIizY09ytvU57Ph1UpBp7dOcpnIrbxw0UHvBEUT4jn8fBhKN4GgrGvi2PkTYHIoUeKtk5ZSbpYRlFHicdarvQOjkZLmojeeFkQEX6vjU4vkMkg+3ySgGuPHaojRSDZ6c9YAPARaM7R3LDKquTM2cdK3fSgXhvr4VDuHi2PMogVkV5xB2N2JKRbwgB2rUO/dTf1vL5Bu60NlIpQRxLsJN3nwggecO3I4YzSyZP7X/BE90rT+WOXWglLkrl1Fy0VnkwkCgkaCWNc0QCsaYUA9TRnb9By1Bx9mfEzR8OHh+BDxBMZRyCYo8TjfNKTJwFHU/B/9IuA8XmmKa6+jddki8iMVspWYUJorHZAIxLWYmlKYyz+MTGvn4ifvYeGcgwQarBPKlZC+gRLPvTyDeqLIhBbnQb1pyIiCuEHu2lW0LltEaf8ord6Tq3vC8dQH46k3NYuKPcZqCiLkDoyS+eAptN3wMaZmRrHO4KyioyXmsx99jV9883G6Z4+RJAYtcgwDR8eJUkhcRxbPp3jRMvIjFUpakas7Vi3J0dVuxAPVuiNOU/rHkvRPvalkMqEuVSps5NMc+EuM79kJ2YhApwwfyvLrux7h+o/3cNv9K5jRVkUJxx+BhjSG4LwzyAaGjHVknadFNMHYwXE/tGOwNtg32JkZLZ/TFdI2uvN1EmsjEYz1TG3xzL5qER2lCrOnVjEiLJk/wvxZozz0zAIKGYt3CiVeOBpGAKcYHsoxfZan9dTpqNgSCgQOslg29/jMxqeD1qe3RlOCbKG4radv4MEXCdtbSiFp6rUIKk4wC2ZRV0UG9xQ4a/E+HvzWo/zm0cU8++IcipkU79QRF3gEox2j4xly2ZQ7Pv8M551zkNuLt0LqmExiFo/OZUy+kDXXX1UkLh8Y+ckTw43Z7ztjfrle8VohRqDu8gzn5jKzE75x2RN8aPEwdz9wLk8+30l7KcY6jcIfCcJAeQ6Vc5yzdA+/umcDbaWYW++7hJHRDMY4rBdSgboIw0nqL1we+XjsYPmOn70yZKctnleuVHwigZQpUabEfPsKd7Z8lR/f/kcq9SzXff1q/rG5k2ktdZzTkzmxyYBSnkNjWT55SQ83fGIz3/7p+Tz57y6K+TrF6jhJW55EUhpaKCeWzywvysKZAdv7hu2llyx/f7E1kp3Djmf797uLsxvVufIH2sM9/P3Amdx81yp6d02hpRTTkk+wVnN0aTNaoFoLOfsDe7n+ipe48c4r2DNUYPaMKvZQjO8bwHbPJKk5qmh0WGQ8YXzzjkYtH7WY83IDIxE1v4Cd1RVyZ0cazco8Xr2cR3LX0Ld5iNyuXzKtvY5LBW+FY+uq0QK1WsTlK7bTv7eFl1+bQfuUKvuHilCL8Bt6GVu+nDZdosONMTfo5eWX/qm77VPhAv0fhqmpXnc6W/zK1sHiA1FPdSllDyrxtD/zO3wEzupmWj6OyPnz7vaNRDN3Zpk7btrEobGIvt3txHWDUp5CGNN2aSfTS2O0jg+itaWmpzIgi3nVnsV2ezr7mU0FoZ46sOPUpxaJH3kefvQw5DPgjq+8aUDXd7wST9wwhMZy5tIB5s85SKlQRytHwwaUX0/Zt/IyDiy7iPLIFCq2DYd4AwTSQNHAeUdDK4lbCyQv9CH3/h6sAyVvWhnlI13f9c207/FeqFRDklThJzOk0LwupRDzuY8QXbyIrPGYRgOxHo/Cak0aGhJrcX/dgvr5E0hqwei3bFbkgrn3HqmGgKgJ1TIx7WkWpdTh4wS7pAt/wVLongmlLCD40Sr07kWe2orauhsyQbOdPoFykSOv3lgLnByfMaUhH6K3DcBL/fh81PQvQKWOVGIwCvLZ5u5+srF7o7jUoyZ6TyWo9MQV8Sh4QRxINoMUc83Z0bgJQIq55jtHc+2x34vCWSEIjDt75YKR5pVUqREv/Urpec6nvK3e+3BAKzAccdPh+RNUV+fJZgOXK4bp1n8NlAITeOdsv1KiNhhC0SjbbETfAdwE3modAk4IjXHFQiatjjV0IJEoURvkslnf6xQdbkkbTEGlzgRaee9PcI53J5PR4BxYa30URThry96Z09Rjg1/pbzTqXzjl1JmNjpkl0oazSibtfm9GM9DFK4XNRBkxRCJK3fjY4Bf71erV6/Smfbev61pU/JRLZH/G5LUmkLcVmO8ARgKJVF6L0/sSW7nm0d23rF/NuuZdWM06vZ41djn3zJsxt+0W6+2VHt/Fe/h7rkR2gXrINtIf/Hnvzbsmdf4PE/y2gP8zPX8AAAAASUVORK5CYII=">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ZuperVerse">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<button id="fsBtn" title="Layar penuh (tanpa bilah judul & taskbar)">⛶ Layar Penuh</button>
+<div id="tbar"><img src="icon-192.png" alt="">ZuperVerse</div>
+<canvas id="c"></canvas>
+
+<!-- ================= LANDING ================= -->
+<div id="landing">
+ <div class="wrap">
+  <div class="nav">
+   <div class="brand"><div class="cube"></div>ZuperVerse</div>
+   <div class="navl"><button class="btn sm gray" id="navGuru" title="Masuk untuk guru berlangganan (Pro)">🔑 Masuk</button><button class="btn sm green" id="navPlay">▶ Main</button></div>
+  </div>
+  <div class="hero">
+   <div class="tag"><span class="chip">🎮 Game 3D</span><span class="chip">📚 SD • SMP • SMA/SMK</span><span class="chip">📱 HP &amp; 💻 Laptop</span></div>
+   <h1 class="title">ZUPER<br><span>VERSE</span></h1>
+   <div class="slogan">Jelajahi Dunia, Taklukkan Ilmu</div>
+   <div class="lead">Semesta belajar 3D anak Indonesia. Pilih dunia, selesaikan misi, bantu warga, dan taklukkan gedung-gedung mata pelajaran dengan menjawab soal dari gurumu.</div>
+   <div class="packbar" id="packbar"></div>
+   <div class="cta"><button class="btn green lg" id="lpPlay">▶ Main Sekarang</button><button class="btn lg" id="lpBuat" title="Gratis, tanpa daftar: tulis soal sendiri atau dengan AI, lalu mainkan">✏️ Buat Soal Sendiri <small class="lpfree">GRATIS + AI</small></button><button class="btn yel lg" id="lpInstall" style="display:none" title="Pasang di HP atau laptop, lalu main walau tanpa internet">⬇️ Pasang Offline</button></div>
+   <div class="lplogin">Sudah punya akun guru? <a href="#" id="lpGuru">🔑 Masuk di sini</a></div>
+   <div class="joinbox" id="joinBox"><b>🎮 Punya kode dari guru?</b> <span class="mut" style="font-size:12px">Kode main (6 angka), kode kelas, atau kode latihan</span><div class="row" style="margin-top:8px"><input id="lpKode" class="gin" placeholder="Contoh: 482913" maxlength="10" style="max-width:220px;text-transform:uppercase;font-size:18px;letter-spacing:2px"><button class="btn yel" id="lpJoin">Masuk ➜</button></div><div class="mut" id="lpJoinMsg" style="font-size:12px;margin-top:4px"></div></div>
+   <div class="joinbox" id="inClass" style="display:none"></div><div class="joinbox" id="pdpBox" style="display:none;border-color:rgba(251,191,36,.6)"></div>
+   <div class="stats">
+    <div><b id="stMapel">0</b><span>Gedung Mapel</span></div>
+    <div><b id="stSoal">0</b><span>Soal</span></div>
+    <div><b id="stMisi">0</b><span>Misi</span></div>
+    <div><b id="stItem">0</b><span>Item Lemari</span></div>
+   </div>
+   <div id="nogl">Perangkat atau browser ini belum mendukung grafis 3D (WebGL). Coba buka dengan Chrome versi terbaru.</div>
+  </div>
+ </div>
+
+ <section class="sec" id="dunia"><div class="wrap">
+  <h2>🗺️ Pilih duniamu</h2>
+  <p class="sub">ZuperVerse terdiri dari banyak dunia. Paket soal dari guru bisa dimainkan di dunia mana pun, jadi murid bebas memilih tempat petualangannya.</p>
+  <div class="worlds" id="worldsLanding"></div>
+ </div></section>
+
+ <section class="sec"><div class="wrap">
+  <h2>Belajar terasa seperti main game</h2>
+  <p class="sub">Setiap mata pelajaran berubah menjadi gedung di sebuah kota yang hidup. Murid bergerak bebas, mengumpulkan hadiah, dan menjawab soal untuk naik level.</p>
+  <div class="grid">
+   <div class="fcard"><div class="ic">🏙️</div><h3>Kota 3D yang Hidup</h3><p>Rumah warga, jalan raya, mobil, angkot, bus sekolah, air mancur, lampu jalan, danau, dan lapangan sepak bola.</p></div>
+   <div class="fcard"><div class="ic">🏫</div><h3>Gedung Mapel</h3><p>Setiap mapel menjadi satu gedung. Masuk pintunya untuk kuis dengan nyawa, waktu, combo, dan pembahasan.</p></div>
+   <div class="fcard"><div class="ic">🎯</div><h3>Misi &amp; Level</h3><p>Misi utama dan misi harian dengan XP, level, dan koin. Progres tersimpan di perangkat murid.</p></div>
+   <div class="fcard"><div class="ic">👕</div><h3>Lemari Gaya</h3><p>Seragam SD, SMP, SMA, pramuka, batik, topi, toga, kacamata, ransel, sampai jubah pahlawan.</p></div>
+   <div class="fcard"><div class="ic">💬</div><h3>Bantu Warga</h3><p>Warga kota punya pertanyaan. Bantu mereka menjawab untuk mendapat koin tambahan.</p></div>
+   <div class="fcard"><div class="ic">📺</div><h3>Ruang Materi</h3><p>Setiap gedung bisa berisi video YouTube, link, file Google Drive, gambar, atau ringkasan teks dari guru untuk dipelajari sebelum kuis.</p></div>
+   <div class="fcard"><div class="ic">📖</div><h3>Buku Ilmu</h3><p>Buku tersebar di seluruh kota. Kumpulkan semuanya untuk menyelesaikan misi kolektor.</p></div>
+  </div>
+ </div></section>
+
+ <section class="sec"><div class="wrap">
+  <h2>Cara bermain</h2>
+  <p class="sub">Empat langkah sederhana. Tidak perlu akun, langsung main dari browser.</p>
+  <div class="flow">
+   <div class="step"><div class="n">1</div><h4>Buat karakter</h4><p>Isi nama, pilih seragam, rambut, dan aksesoris di Lemari.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">2</div><h4>Jelajahi kota</h4><p>Cari gedung mapel, warga bertanda "!", dan Buku Ilmu.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">3</div><h4>Jawab soal</h4><p>Masuk gedung, jawab sebelum waktu habis, jaga nyawa dan combo.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">4</div><h4>Klaim hadiah</h4><p>Ambil koin di Papan Misi, naik level, buka item keren.</p></div>
+  </div>
+  <div class="keys">
+   <div class="fcard"><h3>💻 Laptop / Komputer</h3><p><kbd>W A S D</kbd> atau panah: berjalan<br><kbd>Spasi</kbd> lompat &nbsp; <kbd>Shift</kbd> lari<br><kbd>E</kbd> masuk / bicara &nbsp; <kbd>M</kbd> misi &nbsp; <kbd>Esc</kbd> jeda<br>Seret mouse: putar kamera, scroll: zoom</p></div>
+   <div class="fcard"><h3>📱 HP / Tablet</h3><p>Joystick kiri bawah: berjalan<br>Tombol bulat kanan: lompat<br>Tombol kuning: masuk / bicara<br>Tombol ⏸️ kanan atas: jeda / keluar<br>Seret layar: putar kamera<br>Cubit dua jari: zoom kamera</p></div>
+  </div>
+ </div></section>
+
+ <section class="sec" id="guru"><div class="wrap">
+  <h2>Skema pemakaian untuk semua guru</h2>
+  <p class="sub">Satu aplikasi bisa dipakai banyak guru sekaligus. Setiap guru menyusun paket soal sendiri sesuai mapel dan kelasnya, lalu membagikannya ke murid. Isi kota langsung menyesuaikan: satu mapel menjadi satu gedung, maksimal 12 gedung per paket.</p>
+  <div class="flow">
+   <div class="step"><div class="n">1</div><h4>Susun soal</h4><p>Isi soal dan materi (video YouTube, link, teks) lewat Editor Visual, tempel JSON, atau minta AI membuatkannya dengan Prompt AI.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">2</div><h4>Simpan &amp; bagikan</h4><p>Buat Link Paket lalu kirim lewat WhatsApp, atau bagikan file .json ke guru lain.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">3</div><h4>Murid bermain</h4><p>Murid membuka link. Paket otomatis termuat dan gedung-gedung mapel muncul di kota.</p></div>
+   <div class="arrow">➜</div>
+   <div class="step"><div class="n">4</div><h4>Pantau hasil</h4><p>Dengan Kelas Online, nilai dan analisis soal langsung masuk ke dashboard guru. Tanpa server, murid mengirim kartu hasil lewat WhatsApp.</p></div>
+  </div>
+
+  <div class="tiers">
+   <div class="tier"><span class="lbl" style="background:#22c55e;color:#052e16">TAHAP 1 • SUDAH BISA</span><h3>Tanpa server</h3><ul><li>Guru menyusun paket di Mode Guru.</li><li>Dibagikan sebagai link (<b>#p=...</b>) atau file .json.</li><li>Setiap guru bebas punya paket per mapel atau kelas.</li><li>Materi video, link, dan teks di setiap gedung.</li><li>Hasil dikirim murid lewat WhatsApp.</li></ul></div>
+   <div class="tier"><span class="lbl" style="background:#22c55e;color:#052e16">TAHAP 2 • SUDAH BISA (dengan server)</span><h3>Kelas Online &amp; Dashboard</h3><ul><li>Guru membuat kelas dan mendapat kode, misalnya <b>K7M2QX</b>.</li><li>Murid masuk dengan nama panggilan dan nomor absen.</li><li>Nilai, jawaban per soal, dan materi yang dibuka tercatat otomatis, juga saat sinyal putus-sambung.</li><li>Dashboard: rekap nilai, ketuntasan KKTP, analisis butir soal, rekomendasi tindak lanjut, dan unduh Excel.</li></ul></div>
+   <div class="tier"><span class="lbl" style="background:#60a5fa;color:#082f49">TAHAP 3 • PENGEMBANGAN</span><h3>Main Bersama (real-time)</h3><ul><li>Murid satu kelas berada di kota yang sama.</li><li>Pesan cepat dan emote yang aman untuk anak.</li><li>Mode Lomba: semua murid menjawab soal yang sama serentak.</li><li>Papan peringkat langsung.</li></ul></div>
+  </div>
+
+  <div class="two">
+   <div class="fcard"><h3>Format paket soal (JSON)</h3>
+<div class="code">{
+  "judul": "Matematika Kelas 5 - Pecahan",
+  "guru": "Nama Guru",
+  "jenjang": "SD Kelas 5",
+  "mapel": [
+    {
+      "nama": "Pecahan",
+      "warna": "#ef4444",
+      "waktu": 30,
+      "jumlah": 10,
+      "materi": [
+        {"judul": "Video: Mengenal Pecahan", "jenis": "video", "url": "https://youtu.be/..."},
+        {"judul": "Ringkasan", "jenis": "teks", "isi": "Pecahan adalah ..."}
+      ],
+      "wajibMateri": false,
+      "soal": [
+        {
+          "q": "1/2 + 1/4 = ...",
+          "opsi": ["3/4", "2/6", "1/6", "2/4"],
+          "jawab": 0,
+          "bahas": "1/2 = 2/4, jadi 2/4 + 1/4 = 3/4",
+          "gambar": "(opsional) link gambar"
+        }
+      ]
+    }
+  ]
+}</div>
+   </div>
+   <div class="fcard"><h3>Cara berbagi untuk sekolah / gugus</h3>
+    <table class="tbl">
+     <tr><th>Cara</th><th>Contoh</th></tr>
+     <tr><td>Link paket (langsung)</td><td><code>zuperverse.../#p=z8f3k...</code></td></tr>
+     <tr><td>File JSON di hosting sekolah</td><td><code>zuperverse.../?paket=/paket/sd5-mtk.json</code></td></tr>
+     <tr><td>Kode kelas (Tahap 2)</td><td><code>zuperverse.../#k=K7M2QX</code></td></tr>
+    </table>
+    <p class="mut" style="margin-top:12px">Saran penamaan file agar rapi: <b>jenjang-kelas-mapel.json</b>, misalnya <b>sd5-ipas.json</b>, <b>smp8-bindo.json</b>, <b>smk11-akuntansi.json</b>. Simpan semua file di satu folder <b>/paket/</b> agar mudah dibagikan antar guru.</p>
+    <div class="row"><button class="btn yel" id="lpGuru2">👩‍🏫 Buka Mode Guru</button><a class="btn green" href="#langganan" data-service="billing" target="_blank" rel="noopener">🛒 Langganan Mode Guru</a><a class="btn" href="guru.html">📘 Fitur &amp; Panduan Guru</a></div><p class="mut" style="margin-top:10px">Mode Guru memakai akun pada server Anda: daftar dengan email atau Google, lalu minta aktivasi pengelola. Murid bermain gratis.</p>
+   </div>
+  </div>
+ </div></section>
+ <footer>ZuperVerse • Semesta Belajar Anak Indonesia • By Zuperguru</footer>
+</div>
+
+<!-- ================= HUD ================= -->
+<div id="hud"><div id="dtkBar" class="glass" style="display:none"></div><div id="lobiBar" class="glass" style="display:none"><span id="lobiTxt"></span><button class="btn sm gray" id="lobiOut" aria-label="Keluar lobi">Keluar</button></div><div id="lobiBig" style="display:none"></div><div id="znWarn" style="display:none"></div><div id="znHud" class="glass" style="display:none"><span id="znArr">⬆</span><span id="znTxt"></span></div>
+ <div class="prof glass"><div class="av" id="hAv">A</div><div><div class="nm" id="hName">-</div><div class="lv">Level <span id="hLv">1</span> • <span id="hXpT">0/100</span> XP</div><div class="xp"><i id="hXp"></i></div></div></div>
+ <div id="tracker" class="glass"><div class="t">🎯 MISI AKTIF</div><div class="n" id="tkN">-</div><div class="d" id="tkD"></div><div class="pbar"><i id="tkP"></i></div></div>
+ <div class="tr">
+  <div class="coin glass" id="hWorld" style="font-size:12px;border-color:rgba(255,255,255,.3)">🏙️ Kota Ilmu</div>
+  <div class="coin glass">🪙 <span id="hCoin">0</span></div>
+  <button class="coin glass" id="hTan" style="display:none">⚡ Tantangan</button>
+  <div class="coin glass" id="hAdv" style="display:none"></div>
+  <button class="coin glass" id="hOnline" style="display:none">👥 online</button>
+  <div class="coin glass" id="hGuru" style="display:none">👩‍🏫 Mode Guru</div>
+  <div class="coin glass" id="hKelas" style="display:none;font-size:12px;border-color:rgba(255,255,255,.3);max-width:230px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"></div>
+  <div class="trbody">
+  <div class="trrow">
+   <div class="rg"><button class="ib" id="bPause" aria-label="Jeda" data-tip="Jeda (Esc)">⏸️</button></div>
+   <div class="rg" id="rgSoc" style="display:none"><button class="ib" id="bGuruT" aria-label="Alat guru" data-tip="Alat guru" style="display:none">📣</button><button class="ib" id="bEmo" aria-label="Sapa teman" data-tip="Sapa teman" style="display:none">😀</button></div>
+   <div class="rg"><button class="ib" id="bWorld" aria-label="Peta dunia" data-tip="Peta dunia">🌍</button><button class="ib" id="bMisi" aria-label="Misi" data-tip="Misi (M)">📜<span class="dot" id="misiDot"></span></button><button class="ib" id="bLemari" aria-label="Lemari kostum" data-tip="Lemari kostum">👕</button><button class="ib" id="bMap" aria-label="Peta mini" data-tip="Peta mini">🗺️</button></div>
+   <div class="rg"><button class="ib" id="bSet" aria-label="Pengaturan" data-tip="Pengaturan">⚙️</button></div>
+  </div>
+  <canvas id="mm" width="280" height="280"></canvas>
+  </div>
+ </div>
+ <div id="act"><button class="btn yel" id="actBtn"></button></div>
+ <div id="emoPanel"></div>
+ <div id="guruPanel"><div style="font-family:var(--fh);font-size:17px;margin-bottom:6px">👩‍🏫 Alat Guru</div>
+  <div class="row" style="margin-top:0"><input class="gin" id="gpAnn" maxlength="140" placeholder="Tulis pengumuman untuk murid..." style="flex:1;min-width:0"><button class="btn sm yel" id="gpSend">Kirim</button></div>
+  <button class="emof" id="gpCall">📣 Panggil semua murid ke tempatku</button><button class="emof" id="gpOnline">👥 Lihat murid yang online</button><button class="emof" id="gpExit" style="background:#7f1d1d">🚪 Keluar dari mode guru</button></div>
+ <div id="joy"><div id="knob"></div></div>
+ <button id="jump">LOMPAT</button><div id="zoomB"><button type="button" data-z="-1" aria-label="Dekatkan kamera">＋</button><button type="button" data-z="1" aria-label="Jauhkan kamera">－</button></div>
+ <div id="tips"><kbd>WASD</kbd> jalan • <kbd>Spasi</kbd> lompat • <kbd>Shift</kbd> lari • <kbd>E</kbd> interaksi • <kbd>Esc</kbd> jeda • seret mouse: kamera</div>
+</div>
+<div id="toasts"></div><div id="belCard"></div>
+
+<!-- ================= LEMARI ================= -->
+<div id="lemari">
+ <div class="lhead">
+  <div class="hd"><h2 id="lTitle">👕 Lemari Gaya</h2><div class="coin glass" style="padding:6px 10px;border-radius:10px;font-weight:900">🪙 <span id="lCoin">0</span></div></div>
+  <div id="lNameWrap"><input id="lName" maxlength="14" placeholder="Tulis namamu di sini"></div>
+ </div>
+ <div class="ltabs" id="lTabs"></div>
+ <div class="items" id="lItems"></div>
+ <div class="lfoot"><span class="mut" id="lInfo" style="font-size:12px;font-weight:800;color:var(--mut)">Klik item untuk memakai</span><button class="btn green" id="lDone">Selesai</button></div>
+</div>
+
+<!-- ================= QUIZ ================= -->
+<div id="lvBig"><button class="btn sm gray lbx" id="lvBigX">✕ Tutup</button><div class="lbt"></div><div class="lbb"></div></div>
+<div class="ov" id="ovImp"><div class="card"><div class="hd"><h2>📥 Impor Soal</h2><button class="btn sm gray" id="impClose">Tutup</button></div><div id="impBody"></div></div></div>
+<div class="ov" id="ovKode"></div>
+<div class="zdlg" id="zDlg"><div class="zbox"><div class="zic" id="zIc"></div><div class="zt" id="zT"></div><div class="zm" id="zM"></div><span class="pwbox" id="zInBox"><input class="gin zin" id="zIn" style="display:none" autocomplete="off" spellcheck="false"><button type="button" class="eyeb" title="Tampilkan" aria-label="Tampilkan">👁️</button></span><div class="zrow"><button class="btn gray" id="zNo">Batal</button><button class="btn" id="zOk">OK</button></div></div></div>
+<div class="ov" id="ovQuiz"><div class="card">
+ <div class="qmeta"><span id="qTitle"></span><span style="display:flex;gap:10px;align-items:center"><span id="qHeart"></span><button class="btn sm gray" id="qExit" title="Keluar dari kuis">✕ Keluar</button></span></div>
+ <div class="timer"><i id="qTimer"></i></div>
+ <div class="qmeta"><span id="qNo"></span><span id="qCombo" style="color:var(--yel)"></span></div>
+ <div class="qrow"><div class="q" id="qText"></div><button class="btn sm gray qspk" id="qSpk" title="Bacakan soal">🔊</button></div><div class="qtip" id="qTip"></div>
+ <img id="qImg" alt="" onerror="this.style.display='none'">
+ <div class="opts" id="qOpts"></div>
+ <div class="bahas" id="qBahas"></div>
+ <div class="row" style="justify-content:flex-end"><button class="btn" id="qNext" style="display:none">Lanjut ➜</button></div>
+</div></div>
+
+<div class="ov" id="ovResult"><div class="card" style="text-align:center">
+ <div class="big" id="rIcon">🏆</div>
+ <h2 id="rTitle" style="margin-top:8px"></h2>
+ <div class="mut" id="rSub"></div>
+ <div class="rstat"><div><b id="rScore">0</b>Nilai</div><div><b id="rCoin">0</b>Koin</div><div><b id="rXp">0</b>XP</div></div>
+ <div id="rExtra" class="mut" style="margin-top:10px"></div>
+ <div class="row" style="justify-content:center"><button class="btn green" id="rWa" style="display:none">📤 Kirim ke Guru</button><button class="btn gray" id="rAgain">↺ Ulangi</button><button class="btn" id="rClose">▶ Lanjut bermain</button></div>
+</div></div>
+
+<div class="ov" id="ovGedung"><div class="card" style="width:min(820px,100%)">
+ <div class="hd"><h2 id="gdTitle"></h2><button class="btn sm gray" id="gdClose">Tutup</button></div>
+ <div class="mut" id="gdSub"></div>
+ <div id="gdList"></div>
+ <div id="gdView" style="display:none"></div>
+ <div class="row" style="justify-content:space-between"><button class="btn gray" id="gdBack" style="display:none">← Daftar materi</button><span></span><button class="btn green" id="gdQuiz">✏️ Mulai Kuis</button></div>
+</div></div>
+
+<div class="ov" id="ovNpc"><div class="card">
+ <div class="npcbox"><div class="npcav" id="nAv">🙂</div><div style="flex:1"><div style="font-weight:900;margin-bottom:6px" id="nName"></div><div class="bubble" id="nLine"></div></div></div>
+ <div class="row" style="justify-content:flex-end"><button class="btn gray" id="nNo">Nanti saja</button><button class="btn green" id="nYes">🙌 Bantu!</button></div>
+</div></div>
+
+<div class="ov" id="ovMisi"><div class="card">
+ <div class="hd"><h2>📜 Papan Misi</h2><button class="btn sm gray" id="mClose">Tutup</button></div>
+ <div class="tabs"><button class="tab on" data-mt="misi">Misi</button><button class="tab" data-mt="profil">Profil</button><button class="tab" data-mt="kuasa">🌟 Penguasaan</button><button class="tab" data-mt="riwayat">📊 Riwayatku</button><button class="tab" data-mt="lencana">🏅 Lencana</button></div>
+ <div id="mBody"></div>
+</div></div>
+
+<div class="ov" id="ovSet"><div class="card" style="width:min(460px,100%)">
+ <div class="hd"><h2>⚙️ Pengaturan</h2><button class="btn sm gray" id="sClose">Tutup</button></div>
+ <div class="mut">Grafik</div>
+ <div class="row" style="margin-top:6px"><button class="btn sm" data-gfx="tinggi">Tinggi (bayangan)</button><button class="btn sm" data-gfx="rendah">Ringan (HP lama)</button></div>
+ <div class="mut" style="margin-top:14px">Suara</div>
+ <div class="row" style="margin-top:6px"><button class="btn sm" id="sSound"></button></div>
+ <div class="mut" style="margin-top:14px">Main bersama teman sekelas</div>
+ <div class="row" style="margin-top:6px"><button class="btn sm" id="sMp"></button><button class="btn sm" id="sTts"></button></div>
+ <div class="row" style="margin-top:20px"><button class="btn yel" id="sGuru">👩‍🏫 Mode Guru</button><button class="btn" id="sHome">🏠 Beranda</button><button class="btn red sm" id="sReset">Hapus progres</button></div>
+</div></div>
+
+<div class="ov" id="ovWorld"><div class="card">
+ <div class="hd"><h2>🗺️ Peta Dunia ZuperVerse</h2><button class="btn sm gray" id="wClose">Tutup</button></div>
+ <div class="mut" style="margin-bottom:12px">Pilih dunia untuk mulai bertualang. Setiap dunia punya beberapa wilayah dengan gedung mapel, satwa, dan fakta menarik.</div>
+ <div class="worlds" id="worldsOv"></div>
+</div></div>
+
+<div class="ov" id="ovZone"><div class="card" style="width:min(940px,100%)">
+ <div class="hd"><h2 id="zTitle">🪐 Peta Tata Surya</h2><button class="btn sm gray" id="zClose">← Peta Dunia</button></div>
+ <div class="mut" id="zMut" style="margin-bottom:12px">Pilih wilayah tujuan roketmu. Gedung mapel tersebar di setiap wilayah, dan gravitasinya berbeda-beda.</div>
+ <div class="worlds" id="zoneList"></div>
+</div></div>
+<div class="ov" id="ovFact"><div class="card" style="width:min(540px,100%);text-align:center"><div class="big">🔭</div><h2 style="margin-top:8px">Tahukah kamu?</h2><div class="mtext" id="fText" style="text-align:left"></div><div class="row" style="justify-content:center"><button class="btn green" id="fOk">Keren! 👍</button></div></div></div>
+<div id="travel"><div class="tvc" id="tvCount">3</div><div class="tvt" id="tvText"></div></div>
+
+<div class="ov" id="ovLic"><div class="card" style="width:min(480px,100%)">
+ <div class="hd"><h2>🔑 Mode Guru</h2><button class="btn sm gray" id="licClose">Tutup</button></div>
+ <div id="licA">
+  <div class="licpro"><div class="licbadge">⭐ AKUN GURU TERKELOLA</div><div class="mut" id="licInfo" style="font-size:13px">Mode Guru (editor soal, kelas online, dan dashboard nilai) tersedia setelah akun diaktifkan pengelola situs. Murid tetap bermain <b>gratis</b> dengan kode kelas dari guru.</div>
+   <div class="licsteps"><div><b>1</b>📝 Daftar akun</div><div><b>2</b>✅ Aktivasi admin</div><div><b>3</b>🏫 Buat kelas</div></div>
+   <div class="row" style="margin-top:8px;justify-content:center"><a class="btn sm yel" id="licBeli2" href="#admin" data-service="admin" target="_blank" rel="noopener">💬 Informasi aktivasi akun</a></div></div>
+  <div class="mut" style="font-size:12px;margin-top:10px;text-align:center">Sudah punya akun? Masuk di bawah ini.</div>
+  <div id="licGWrap" style="display:none;margin-top:14px;text-align:center"><div id="licG" style="display:inline-block;min-height:44px"></div></div>
+  <div class="licor" id="licOr" style="display:none"><span>atau dengan email</span></div>
+  <label class="fld" style="margin-top:10px">Email<input id="licEm" class="gin" type="email" autocomplete="email" maxlength="120" placeholder="nama@email.com"></label>
+  <label class="fld" style="margin-top:8px">Kata sandi<span class="pwbox"><input id="licPw" class="gin" type="password" autocomplete="current-password" maxlength="100"><button type="button" class="eyeb" title="Tampilkan" aria-label="Tampilkan">👁️</button></span></label>
+  <div class="row" style="justify-content:space-between;align-items:center"><button class="btn sm gray" id="licToDaftar">🆕 Daftar akun baru</button><button class="btn green" id="licGo">Masuk ➜</button></div>
+ </div>
+ <div id="licC" style="display:none">
+  <div class="licbadge" style="margin-top:2px">⭐ AKUN GURU TERKELOLA</div>
+  <div id="licCHead" class="mut" style="margin-top:8px;font-size:14px;text-align:center"></div>
+  <h3 style="margin:12px 0 4px;text-align:center">Apakah Anda sudah membeli langganan?</h3>
+  <div class="licch">
+   <button data-ch="baru"><b>✅ Sudah beli</b><span>Saya sudah membayar langganan, lanjut daftar akun</span></button>
+   <button data-ch="lama"><b>⭐ Saya pelanggan lama</b><span>Dulu membeli kode akses, pindahkan akun saya</span></button>
+   <button data-ch="beli"><b>🛒 Belum, saya mau beli dulu</b><span>Buka halaman pembelian langganan</span></button>
+   <button data-ch="coba"><b>🎮 Saya cuma mau coba main</b><span>Main gratis sebagai murid, tanpa akun</span></button>
+  </div>
+  <div class="row"><button class="btn sm gray" id="licCBack">← Kembali</button></div>
+ </div>
+ <div id="licB" style="display:none">
+  <div class="note" id="licBHead" style="margin-top:4px"></div>
+  <div id="licBEm"><label class="fld" style="margin-top:8px">Email<input id="licBEmail" class="gin" type="email" autocomplete="email" maxlength="120" placeholder="nama@email.com"></label>
+   <label class="fld" style="margin-top:8px">Kata sandi (minimal 8 karakter)<span class="pwbox"><input id="licBPw" class="gin" type="password" autocomplete="new-password" maxlength="100"><button type="button" class="eyeb" title="Tampilkan" aria-label="Tampilkan">👁️</button></span></label>
+   <label class="fld" style="margin-top:8px">Ulangi kata sandi<input id="licBPw2" class="gin" type="password" autocomplete="new-password" maxlength="100"></label></div>
+  <label class="fld" style="margin-top:8px">Nama lengkap (beserta gelar bila ada)<input id="licBNama" class="gin" maxlength="60"></label>
+  <label class="fld" style="margin-top:8px">Nomor WhatsApp<input id="licBWa" class="gin" inputmode="tel" maxlength="20" placeholder="08xxxxxxxxxx"></label>
+  <label class="fld" style="margin-top:8px">Nama sekolah (opsional)<input id="licBSek" class="gin" maxlength="80"></label>
+  <label class="fld" id="licBBuktiL" style="margin-top:8px">Bukti pembelian: email / nomor WA saat membeli di Lynk, atau nomor pesanan<input id="licBBukti" class="gin" maxlength="120" placeholder="Contoh: 0812xxxx atau nama@email.com"></label>
+  <div id="licBLama" style="display:none"><div class="note">Isi <b>kode akses lama</b> dan <b>nomor WhatsApp yang dulu didaftarkan</b>. Kelas, murid, nilai, dan soal Anda dipindahkan ke akun ini. Setelah itu kode lama tidak dipakai lagi.</div>
+   <label class="fld" style="margin-top:8px">Kode akses lama<input id="licBKode" class="gin" maxlength="32" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase" placeholder="ZV-XXXX-XXXX"></label>
+   <label class="fld" style="margin-top:8px">Nomor WA yang dulu didaftarkan (kosongkan bila sama)<input id="licBWaL" class="gin" inputmode="tel" maxlength="20" placeholder="08xxxxxxxxxx"></label></div>
+  <div class="row" style="justify-content:space-between"><button class="btn sm gray" id="licBack">← Kembali</button><button class="btn green" id="licDaftar">Daftar &amp; Masuk ➜</button></div>
+ </div>
+ <div id="licMsg" class="mut" style="margin-top:10px;min-height:20px"></div>
+ <div class="mut" style="font-size:11px;margin-top:4px">Dengan masuk atau mendaftar, Anda menyetujui <a href="ketentuan.html" target="_blank" rel="noopener" style="color:#93c5fd">Ketentuan Layanan</a> dan <a href="privasi.html" target="_blank" rel="noopener" style="color:#93c5fd">Kebijakan Privasi</a>.</div>
+ <div class="row" style="justify-content:flex-start"><a class="btn sm yel" id="licBeli" href="#admin" data-service="admin" target="_blank" rel="noopener">💬 Hubungi pengelola</a><a class="btn sm gray" id="licWaAdmin" target="_blank" rel="noopener" style="display:none">💬 Hubungi admin</a></div>
+</div></div>
+
+<div class="ov" id="ovDtk"><div class="card" style="width:min(560px,100%)">
+ <div class="hd"><h2 id="dtkTitle">🕵️ Detektif Kota Ilmu</h2><button class="btn sm gray" id="dtkClose">Tutup</button></div>
+ <div id="dtkBody"></div>
+</div></div>
+<div class="ov" id="ovPsr"><div class="card" style="width:min(560px,100%)">
+ <div class="hd"><h2 id="psrTitle">🏪 Pasar Nusantara</h2><button class="btn sm gray" id="psrClose">Tutup</button></div>
+ <div id="psrBody"></div>
+</div></div>
+<div class="ov" id="ovMain"><div class="card" style="width:min(560px,100%)">
+ <div class="hd"><h2>🎮 Mau main apa?</h2><button class="btn sm gray" id="mnClose">Tutup</button></div>
+ <div class="mut">Semua gratis, tanpa daftar. Soalnya dari gedung mapel yang tersedia.</div>
+ <div id="mnUlang"></div>
+ <div class="mnGrid">
+  <button data-mn="dunia" style="--c:#3b82f6"><span>🌍</span><b>Jelajah Dunia</b><small>Keliling Kota Ilmu, Nusantara, bawah laut, sampai luar angkasa. Masuk gedung mapel dan bantu warga.</small></button>
+  <button data-mn="lari" style="--c:#22c55e"><span>🏃</span><b>Lari Kilat</b><small>Lari 4 lajur, hindari rintangan, masuk gerbang jawaban yang benar sebelum angsa menyusul!</small></button>
+  <button data-mn="arena" style="--c:#06b6d4"><span>🤸</span><b>Jatuh Bangun</b><small>Menara 4 lantai. Benar naik, salah jatuh. Bisakah kamu bertahan di 👑 Puncak?</small></button>
+  <button data-mn="detektif" style="--c:#a855f7"><span>🕵️</span><b>Detektif Kota Ilmu <i class="mnnew">BARU</i></b><small>Baca kesaksian, berita, dan surat di 4 lokasi. Jawab dengan teliti untuk mendapat petunjuk, lalu pecahkan kasusnya! Melatih membaca dan menyimpulkan.</small></button>
+  <button data-mn="pasar" style="--c:#eab308"><span>🏪</span><b>Pasar Nusantara <i class="mnnew" style="background:#eab308;color:#3a2600">BARU</i></b><small>Jaga warung! Hitung total belanja, uang kembalian, diskon, timbangan, dan potongan kue untuk setiap pembeli.</small></button>
+  <button data-mn="jembatan" style="--c:#f97316"><span>🌉</span><b>Jembatan Juara</b><small>Seberangi pulau demi pulau. Jawaban benar membuka jembatan sampai 🏆 FINISH.</small></button>
+ </div>
+ <div class="mut" style="font-size:12px;margin-top:10px">Punya kode dari guru? Masukkan di halaman depan agar nilaimu tercatat di kelas. Guru? <a href="#" id="mnBuat" style="color:var(--yel)">✏️ Buat soal sendiri gratis</a> lalu mainkan di sini.</div>
+</div></div>
+<div class="ov" id="ovLari"><div class="card" style="width:min(460px,100%)">
+ <div class="hd"><h2 id="lrTitle">🏃 Lari Kilat</h2><button class="btn sm gray" id="lrClose">Tutup</button></div>
+ <div class="lrPick"><div class="licbadge" style="background:#22c55e;color:#052e16">🎁 GRATIS • TANPA DAFTAR</div><div class="mut" id="lrDesc">Lari otomatis, kumpulkan koin, hindari rintangan, dan masuk ke <b>gerbang jawaban yang benar</b> sebelum angsa menyusul! Ambil 🛹 papan pelindung, 🧲 magnet, dan ⚡ lari kilat di jalan. Pilih soalnya:</div>
+ <div class="lrList" style="display:flex;flex-direction:column;gap:8px;margin-top:12px"></div></div>
+ <div class="lrRes" style="display:none"></div>
+</div></div>
+<div class="ov" id="ovAkun"><div class="card" style="width:min(540px,100%)">
+ <div class="hd"><h2>⭐ Akun &amp; Langganan</h2><button class="btn sm gray" id="akClose">Tutup</button></div>
+ <div id="akBody"></div>
+</div></div>
+
+<div class="ov" id="ovPause"><div class="card" style="width:min(460px,100%);text-align:center">
+ <div class="big">⏸️</div><h2 style="margin-top:8px">Permainan Dijeda</h2>
+ <div class="mut" id="pWhere"></div>
+ <div class="pgrid">
+  <button class="btn green lg" id="pResume" style="grid-column:1/-1">▶ Lanjutkan</button>
+  <button class="btn" id="pWorld">🌍 Ganti Dunia</button>
+  <button class="btn" id="pMisi">📜 Misi</button>
+  <button class="btn" id="pLemari">👕 Lemari</button>
+  <button class="btn" id="pSet">⚙️ Pengaturan</button>
+  <button class="btn" id="pRiw">📊 Riwayatku</button>
+  <button class="btn" id="pFull">⛶ Layar Penuh</button>
+  <button class="btn green" id="pLari" style="grid-column:1/-1">🎮 Mode Seru: Lari Kilat, Jatuh Bangun, Jembatan</button>
+  <button class="btn yel" id="pTan" style="display:none;grid-column:1/-1">⚡ Tantangan dari Guru</button>
+  <button class="btn red" id="pHome" style="grid-column:1/-1">🏠 Keluar ke Beranda</button>
+ </div>
+ <div class="mut" style="margin-top:12px;font-size:12px">Progres, koin, dan item tersimpan otomatis di perangkat ini.</div>
+</div></div>
+
+<div id="annBox"></div>
+<div id="helpPop"></div>
+<div id="tourDim"><div id="tourHole"></div><div id="tourCard"><div class="tn" id="tourN"></div><h4 id="tourT"></h4><div id="tourX"></div><div class="row" style="justify-content:space-between;margin-top:10px"><button class="btn sm gray" id="tourSkip">Lewati tur</button><span><button class="btn sm gray" id="tourBack">← Kembali</button> <button class="btn sm" id="tourNext">Lanjut ➜</button></span></div></div></div>
+
+<div class="ov" id="ovOnline"><div class="card" style="width:min(720px,100%)">
+ <div class="hd"><h2>👥 Teman Sekelas Online</h2><button class="btn sm gray" id="oClose">Tutup</button></div>
+ <div class="mut" id="oSub"></div>
+ <div id="oList"></div>
+ <div class="mut" style="margin-top:10px;font-size:12px">Kamu hanya bisa bertemu teman sekelas. Untuk menyapa, gunakan tombol 😀 berisi emoji dan kalimat yang sudah disediakan.</div>
+</div></div>
+
+<div class="ov" id="ovAdvRes"><div class="card" style="width:min(480px,100%);text-align:center"><div class="big" id="arIcon">🗺️</div><h2 id="arTitle" style="margin-top:6px"></h2><div class="mut" id="arSub"></div><div class="rstat" id="arStat" style="margin-top:12px"></div><div class="mut" style="font-size:12px;margin-top:10px">Hasil petualangan sudah dikirim ke guru.</div><div class="row" style="justify-content:center;margin-top:12px"><button class="btn green" id="arClose">▶ Lanjut bermain</button></div></div></div>
+<div class="ov" id="ovWait"><div class="card" style="width:min(460px,100%);text-align:center"><div class="mut" id="wInfo"></div><h2 id="wTitle" style="margin:6px 0"></h2><div id="wBig" style="font:700 84px/1.1 var(--fh);color:var(--yel);margin:10px 0">⏳</div><div id="wMsg" style="font-weight:900;font-size:18px"></div><div class="mut" id="wCount" style="margin-top:6px"></div><div class="mut" style="font-size:12px;margin-top:12px">Jangan tutup game. Soal muncul bersamaan untuk semua teman saat guru menekan Mulai.</div><div class="row" style="justify-content:center;margin-top:12px"><button class="btn sm gray" id="wLeave">Keluar ruang tunggu</button></div></div></div>
+<div class="ov" id="ovTan"><div class="card" style="width:min(660px,100%)">
+ <div class="hd"><h2>⚡ Tantangan dari Guru</h2><button class="btn sm gray" id="tClose">Tutup</button></div>
+ <div class="mut" id="tSub"></div>
+ <div id="tList"></div>
+</div></div>
+
+<div class="ov" id="ovTanRes"><div class="card" style="width:min(720px,100%)">
+ <div style="text-align:center"><div class="big" id="trIcon">✅</div><h2 id="trTitle" style="margin-top:8px"></h2><div class="mut" id="trSub"></div><div class="rstat" id="trStat"></div><div class="mut" id="trSync" style="margin-top:8px"></div></div>
+ <div id="trReview"></div>
+ <div class="row" style="justify-content:center"><button class="btn green" id="trClose">Kembali bermain</button></div>
+</div></div>
+
+<div class="ov" id="ovJoin"><div class="card" style="width:min(460px,100%)">
+ <div class="hd"><h2>🏫 Masuk Kelas</h2><button class="btn sm gray" id="jClose">Batal</button></div>
+ <div class="mut">Isi sesuai arahan gurumu. Nilaimu akan tercatat otomatis di dashboard guru.</div>
+ <label class="fld" style="margin-top:12px">Kode kelas<input id="jKode" class="gin" maxlength="10" style="text-transform:uppercase"></label>
+ <label class="fld" style="margin-top:8px">Nama panggilan<input id="jNama" class="gin" maxlength="30" placeholder="Contoh: Budi"></label>
+ <label class="fld" style="margin-top:8px">Nomor absen<input id="jAbsen" class="gin" type="number" min="1" max="999" inputmode="numeric"></label>
+ <div id="jMsg" class="mut" style="margin-top:10px;min-height:20px"></div>
+ <div class="row" style="justify-content:flex-end"><button class="btn green" id="jGo">Masuk ➜</button></div>
+</div></div>
+
+<div class="ov" id="ovDash"><div class="card">
+ <div class="hd" style="align-items:flex-start"><div><h2 id="dTitle">📊 Dashboard Kelas</h2><div class="mut" id="dSub"></div></div><div class="row" style="margin:0;justify-content:flex-end"><button class="btn sm" id="dRefresh">↻ Muat ulang</button><button class="btn sm green" id="dExport">⬇ Unduh Excel</button><button class="btn sm yel" id="dPrint">🖨 Rapor semua murid</button><button class="btn sm gray" id="dClose">Tutup</button></div></div>
+ <div class="row" style="margin-top:6px"><label class="fld" style="flex-direction:row;align-items:center;gap:8px">KKTP<input id="dKktp" type="number" min="0" max="100" style="width:80px"></label><label class="fld" style="flex-direction:row;align-items:center;gap:8px">Mapel<select id="dMapel"></select></label><label class="fld" style="flex-direction:row;align-items:center;gap:8px">Paket<select id="dPaket"></select></label><label class="fld" style="flex-direction:row;align-items:center;gap:8px">Dunia<select id="dDunia"></select></label><label class="fld" style="flex-direction:row;align-items:center;gap:8px">Periode<select id="dPer"><option value="0">Semua waktu</option><option value="7">7 hari terakhir</option><option value="30">30 hari terakhir</option><option value="90">90 hari terakhir</option></select></label></div>
+ <div class="tiles" id="dTiles"></div>
+ <div class="tabs"><button class="tab on" data-dt="murid">👥 Murid</button><button class="tab ttan" data-dt="tan">⚡ Tantangan &amp; Ujian</button><button class="tab" data-dt="rekap">📋 Rekap Nilai</button><button class="tab" data-dt="anal">📐 Analisis Nilai</button><button class="tab" data-dt="mapel">📚 Per Mapel</button><button class="tab" data-dt="kuasa">🌟 Penguasaan</button><button class="tab" data-dt="rank">🏆 Peringkat</button><button class="tab" data-dt="soal">🔍 Analisis Soal</button><button class="tab" data-dt="tren">📈 Perkembangan</button><button class="tab" data-dt="live">🟢 Live</button><button class="tab" data-dt="rek">💡 Rekomendasi</button><button class="tab" data-dt="cert">🎓 Sertifikat</button><button class="tab own" data-dt="pdp">👥 Pendamping</button></div>
+ <div id="dBody"></div>
+</div></div>
+
+<!-- ================= GURU ================= -->
+<div class="ov" id="ovGuru"><div class="card">
+ <div class="hd"><h2>👩‍🏫 Mode Guru</h2><span style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end"><span id="gWho" class="mut" style="font-size:12px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></span><button class="btn sm" id="gAkun" title="Akun &amp; langganan">⭐ Akun</button><button class="btn sm red" id="gLogout" title="Keluar dari akun guru di perangkat ini">🚪 Logout</button><button class="btn sm gray" id="gClose">Tutup</button></span></div>
+ <div id="gLicBan"></div>
+ <div class="tabs" id="gTabs">
+  <button class="tab on" data-gt="home">🏠 Beranda</button>
+  <button class="tab" data-gt="editor">✏️ Soal</button>
+  <button class="tab" data-gt="kelas">📲 Kelas &amp; Murid</button>
+  <button class="tab ttan" data-gt="tan">⚡ Tantangan</button>
+  <button class="tab" data-gt="paket">📚 Paket Saya</button>
+  <button class="tab" data-gt="more">⋯ Lainnya</button>
+ </div>
+ <div id="gBody"></div>
+ <div class="gfoot"><div id="gMsg" class="mut"></div><button class="btn green" id="gSave">💾 Simpan</button></div>
+</div></div>
+
+<script src="config.js"></script>
+<script src="assets/boot.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="assets/game.js"></script>
+<script src="assets/github-pages.js"></script>
+</body>
+</html>

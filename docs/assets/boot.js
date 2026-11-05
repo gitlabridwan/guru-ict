@@ -1,0 +1,1 @@
+window.addEventListener("error",function(e){var d=document.getElementById("bootErr");if(!d){d=document.createElement("div");d.id="bootErr";document.body.appendChild(d)}d.textContent="Terjadi kesalahan: "+e.message+" (baris "+e.lineno+"). Kirim tangkapan layar ini ke pengembang."});
